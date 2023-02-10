@@ -1,17 +1,17 @@
-public class NYPizzaStore extends PizzaStore {
+public class ChicagoPizzaStore extends PizzaStore {
     
     protected Pizza creatPizza(String type) {
         if (type.equals("cheese")) {
-            return new NYStyleCheesePizza();
+            return new ChicagoStyleCheesePizza();
         }
         else if (type.equals("veggie")) {
-            return new NYStyleVeggiePizza();
+            return new ChicagoStyleVeggiePizza();
         }
         else if (type.equals("clam")) {
-            return new NYStyleClamPizza();
+            return new ChicagoStyleClamPizza();
         }
         else if (type.equals("pepperoni")) {
-            return new NYStylePepperoniPizza();
+            return new ChicagoStylePepperoniPizza();
         }
         else {
             return null;
